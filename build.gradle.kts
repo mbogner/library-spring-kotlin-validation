@@ -14,10 +14,16 @@ group = mavenGroup
 dependencies {
     implementation(platform(libs.bom))
 
+    api("org.springframework.boot:spring-boot-starter-validation")
+
+    api("org.jetbrains.kotlin:kotlin-reflect")
+
     // TEST ---------
     testImplementation("org.assertj:assertj-core")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
+    testImplementation("org.junit.jupiter:junit-jupiter-params")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+
 }
 
 repositories {
@@ -108,7 +114,7 @@ publishing {
 
             pom {
                 name.set("spring-kotlin-validation")
-                description.set("A library for publishing in Maven Central") // TODO
+                description.set("Validation library for Kotlin with Spring Boot")
                 url.set("https://mbo.dev")
                 licenses {
                     license {

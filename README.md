@@ -1,6 +1,6 @@
 # spring-kotlin-validation
 
-Some library to release on Maven Central.
+Validation library for Kotlin with Spring Boot.
 
 ## Release
 
